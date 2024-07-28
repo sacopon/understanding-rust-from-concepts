@@ -1,3 +1,6 @@
+#[path="module_hello.rs"]
+mod module_hello2;
+
 fn main() {
-    println!("Hello, world!");
+    module_hello2::print_hello();
 }
