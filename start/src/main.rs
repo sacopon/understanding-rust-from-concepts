@@ -1,9 +1,6 @@
-mod module_hello {
-    pub fn print_hello() {
-        println!("Hello");
-    }
-}
+#[path="module_hello.rs"]
+mod module_hello2;
 
 fn main() {
-    module_hello::print_hello();
+    module_hello2::print_hello();
 }
