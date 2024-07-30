@@ -1,7 +1,9 @@
-fn main() {
-    let mut x = 1;
-    let x_ref = &x;
+fn return_hello() -> &String {
+    let s = "Hello".to_string();
+    &s;
+}
 
-    x = 2;
-    println!("{}", x_ref);
+fn main() {
+    let s = return_hello();
+    println!("{}", s);
 }
