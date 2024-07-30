@@ -1,9 +1,8 @@
+const BUFSIZE: usize = 1024;
 fn main() {
-    let x = 1;
-    println!("{}", x);
-    {
-        let x = 2;
-        println!("{}", x);
+    let mut ibuf = [0i32; BUFSIZE];
+
+    for ii in 0..BUFSIZE + 2 {
+        ibuf[ii] = ii as i32;
     }
-    println!("{}", x);
 }
