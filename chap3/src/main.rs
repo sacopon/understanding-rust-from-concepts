@@ -1,6 +1,12 @@
+fn myclear(x: &mut String) {
+    x.clear();
+}
+
 fn main() {
     let mut s = "Hello".to_string();
     println!("s={}", s);
-    s.clear();
+
+    let s_ref = &mut s;
+    myclear(s_ref);
     println!("s={}", s);
 }
